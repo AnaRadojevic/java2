@@ -1,11 +1,14 @@
 
 package student;
-
+import computer.Computer;
+import cours.Cours;
 
 public class Student {
     private String firstName;
     private String lastName;
     private int yearOfBirth;
+    private Cours cours;
+    private Computer computer;
     
     public Student(){
     this.firstName = "-";
@@ -21,6 +24,12 @@ public class Student {
     
     }
     
+    public Cours getCours(){
+    return this.cours;
+    }
+    public Computer getComputer(){
+    return this.computer;
+    }
 
     public String getFirstName() {
         return firstName;
@@ -48,9 +57,9 @@ public class Student {
     
     
     public void info() {
-        System.out.println("Terenutni program je: " + getFirstName());
-        System.out.println("Zvuk je: " + getLastName());
-        System.out.println("Ukljuceno: " + getYearOfBirth());
+        System.out.println("First namr: " + getFirstName());
+        System.out.println("Last name: " + getLastName());
+        System.out.println("Year of birth: " + getYearOfBirth());
     }
     
 }
