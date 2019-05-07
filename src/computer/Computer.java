@@ -13,6 +13,12 @@ public class Computer {
 
     public Computer() {
     }
+
+    public Computer(double tact, double memory, int hardDrive) {
+        this.tact = tact;
+        this.memory = memory;
+        this.hardDrive = hardDrive;
+    }
     
     
     

@@ -39,5 +39,10 @@ public class Cours {
     
     
     
+    public void info() {
+        System.out.println("Name: " + getName());
+        System.out.println("Number of clasess: " + getNumberOfClasess());
+        
+    }
     
 }
