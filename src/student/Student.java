@@ -6,6 +6,21 @@ public class Student {
     private String firstName;
     private String lastName;
     private int yearOfBirth;
+    
+    public Student(){
+    this.firstName = "-";
+    this.lastName = "-";
+    this.yearOfBirth=0;
+    
+    
+    }
+    public Student(String firstName, String lastName, int yearOfBirth ){
+    this.firstName = firstName;
+    this.lastName = lastName;
+    this.yearOfBirth=yearOfBirth;
+    
+    }
+    
 
     public String getFirstName() {
         return firstName;
